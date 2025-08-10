@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import gomanderLogo from '../assets/gomander-logo.png'
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -80,9 +82,7 @@ import Layout from '../layouts/Layout.astro';
 					<!-- Gomander Card -->
 					<a href="https://lazylabz.github.io/gomander" target="_blank" class="rounded-lg border border-slate-300 hover:border-primary-light bg-white text-slate-900 shadow-sm p-6 space-y-4 transition-all duration-300 relative overflow-hidden hover:-translate-y-2 hover:shadow-xl shimmer">
 						<div class="flex items-center space-x-3">
-							<div class="w-10 h-10 bg-gradient-to-br from-primary to-primary-alt rounded-lg flex items-center justify-center">
-								<span class="text-lg font-bold text-white">G</span>
-							</div>
+							<Image src={gomanderLogo} alt="Gomander" class="w-10 h-10 rounded-lg flex items-center justify-center" />
 							<h3 class="text-xl font-semibold">Gomander</h3>
 						</div>
 						<p class="text-sm text-left text-slate-500">
